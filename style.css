@@ -244,7 +244,7 @@ section.sobre .flex {
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 30 px;
+    margin-bottom: 30px;
 }
 
 .sobre .txt-sobre h2 span {
@@ -255,9 +255,11 @@ section.sobre .flex {
 .sobre .txt-sobre p {
     /* margin: 20px; */
     text-align: justify;
+    margin-bottom: 30px
 }
 
 .btn-social button {
+    
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -437,11 +439,16 @@ footer .line-footer p a {
     }
 
     /* CABEÇALHO */
-    .menu-desktop,
+    /* .menu-desktop,
     .btn-contato {
         display: none;
 
+    } */
+    .menu-desktop{
+        display: none;
+
     }
+    
 
     /* topo dp site */
     section.topo-do-site .flex {
@@ -508,6 +515,29 @@ footer .line-footer p a {
     }
     footer .line-footer{
         text-align: center;
+    }
+
+    .btn-contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        margin-right: 20px;
+    }
+    
+    .btn-contato button {
+        padding: 10px 40px;
+        font-size: 14px; /* Aumentado para melhor visibilidade */
+        font-weight: 600;
+        background-color: #FAD560;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    .logo-crea{
+        display: none;
+
     }
 
 }
