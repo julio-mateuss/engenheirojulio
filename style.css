@@ -4,9 +4,10 @@
 
     --maintheme: #1B263B;
     --botoes: #F7F7F7;
-    --botoesborda: #60fa6833;
+    --botoesborda: #a360fa33;
     --letras: #FFF;
     --cabecalho: #040c1c;
+    --Portifolio-letra: black;
     /* Adicione mais variáveis conforme necessário */
 }
 
@@ -67,6 +68,10 @@ body {
     display: flex;
 }
 
+.btn-contato a {
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
@@ -76,6 +81,11 @@ body {
     border-radius: 15px;
     cursor: pointer;
     transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    text-decoration: none; /* Remove qualquer sublinhado no botão */
 
 }
 
@@ -191,7 +201,7 @@ section.topo-do-site .flex {
 }
 
 
-.topo-do-site .img-topo-site img {
+/* .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -205,7 +215,7 @@ section.topo-do-site .flex {
     100% {
         top: 30px;
     }
-}
+} */
 
 
 /* ESTILO DAS ESPECIALIDADES */
@@ -227,6 +237,7 @@ section.especialidades .flex {
     border-radius: 25px;
     margin-top: 45px;
     transition: .2s;
+    text-align: center;
 }
 
 /* 
@@ -239,6 +250,7 @@ section.especialidades .flex {
 .especialidades .especialidades-box i {
     font-size: 70px;
     color: var(--botoes);
+    /* display: inline-block; */
 
 }
 
@@ -250,6 +262,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box p {
     font-size: 18px;
+    text-align: left;
     /* margin: 15px 0; */
 
 }
@@ -284,7 +297,7 @@ section.sobre .flex {
 .sobre .txt-sobre p {
     /* margin: 20px; */
     text-align: justify;
-    margin-bottom: 30px
+    margin-bottom: 50px
 }
 
 .btn-social button {
@@ -315,7 +328,7 @@ section.portifolio .flex {
 }
 
 .img-port {
-    width: 360px;
+    width: 460px;
     height: 460px;
     background-color: var(--botoes);
     background-size: cover;
@@ -342,9 +355,9 @@ section.portifolio .flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 600;
-    color: #fff;
+    color: var(--cabecalho);
     opacity: 0;
     transition: .5s;
 }
@@ -428,6 +441,7 @@ footer .flex {
 footer .line-footer {
     padding: 20px 0;
     /* border-bottom: 2px solid var(--botoes); */
+    text-align: center;
 }
 
 .borda {
@@ -530,6 +544,7 @@ footer .line-footer p a {
     .img-port {
         width: 100%;
         max-width: 360px;
+        max-height: 360px;
         margin: 0 auto;
     }
 
